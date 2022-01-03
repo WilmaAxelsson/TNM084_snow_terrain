@@ -28,7 +28,7 @@ public class SnowController : MonoBehaviour
         
         materials.SetFloat("_SnowAmount", 0.0f);
 
-
+        //
         //   sphere = GameObject.Find("Sphere"); // Find the Sphere object that generates the snow
 
     }

@@ -1,11 +1,9 @@
-
 using UnityEngine;
+using UnityEngine.UI;
 
 public class TerrainGenerator : MonoBehaviour
 {
-
-
-    public int depth = 25;
+    public int depth = 30;
 
     public int width = 500;
     public int height = 500;
@@ -15,21 +13,31 @@ public class TerrainGenerator : MonoBehaviour
     public float offsetX = 100f;
     public float offsetY = 100f;
 
-
+    [SerializeField] private Button terrainButton;
 
     void Start()
     {
-        //Generate a new, random terrain each time:
-        offsetX = Random.Range(0f, 9999f);
-        offsetY = Random.Range(0f, 9999f);
-
+        randomOffset();
     }
 
     void Update()
     {
         Terrain terrain = GetComponent<Terrain>();
         terrain.terrainData = GenerateTerrain(terrain.terrainData);
+
+
+        terrainButton.onClick.AddListener(randomOffset); //If "Change terrain" button is clicked, generate a new random terrain using new random offset and scale values
+        
     }
+
+    void randomOffset() //Generate a new, random terrain each time
+    {
+        offsetX = Random.Range(0f, 9999f);
+        offsetY = Random.Range(0f, 9999f);
+
+
+        scale = Random.Range(5f, 40f);
+}
 
     TerrainData GenerateTerrain(TerrainData terrainData)
     {

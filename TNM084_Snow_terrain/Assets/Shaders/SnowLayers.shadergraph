@@ -319,20 +319,6 @@
         {
             "m_OutputSlot": {
                 "m_Node": {
-                    "m_Id": "11276cc8593348968c5fb473595f83ab"
-                },
-                "m_SlotId": 3
-            },
-            "m_InputSlot": {
-                "m_Node": {
-                    "m_Id": "cdc3304618e145fba5915a56323a2ce5"
-                },
-                "m_SlotId": 1
-            }
-        },
-        {
-            "m_OutputSlot": {
-                "m_Node": {
                     "m_Id": "152b96df1d9f416cb5b0346abb45f404"
                 },
                 "m_SlotId": 0
@@ -664,6 +650,20 @@
                     "m_Id": "b46ca17c2d1a4db7bec171d508877a34"
                 },
                 "m_SlotId": 2
+            }
+        },
+        {
+            "m_OutputSlot": {
+                "m_Node": {
+                    "m_Id": "88d363afe66f4f269c346ac3e96c8683"
+                },
+                "m_SlotId": 1
+            },
+            "m_InputSlot": {
+                "m_Node": {
+                    "m_Id": "cdc3304618e145fba5915a56323a2ce5"
+                },
+                "m_SlotId": 1
             }
         },
         {
@@ -1075,8 +1075,8 @@
     ],
     "m_VertexContext": {
         "m_Position": {
-            "x": 774.9999389648438,
-            "y": 137.00001525878907
+            "x": 835.9999389648438,
+            "y": -616.0
         },
         "m_Blocks": [
             {
@@ -1576,7 +1576,7 @@
     "overrideHLSLDeclaration": false,
     "hlslDeclarationOverride": 0,
     "m_Hidden": false,
-    "m_Value": 0.0,
+    "m_Value": 0.5,
     "m_FloatType": 1,
     "m_RangeValues": {
         "x": 0.0,
@@ -2522,7 +2522,7 @@
     "overrideHLSLDeclaration": false,
     "hlslDeclarationOverride": 0,
     "m_Hidden": false,
-    "m_Value": 0.10000000149011612,
+    "m_Value": 0.05000000074505806,
     "m_FloatType": 1,
     "m_RangeValues": {
         "x": 0.0,

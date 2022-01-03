@@ -133,10 +133,10 @@ Material:
     - _ReceiveShadows: 1
     - _Smoothness: 0.5
     - _SmoothnessTextureChannel: 0
-    - _SnowAmount: 0.12927115
+    - _SnowAmount: 0.93722034
     - _SnowBlend: 0.1
-    - _SnowColorNoiseSize: 500
-    - _SnowColorNoiseStrength: 0.455
+    - _SnowColorNoiseSize: 250
+    - _SnowColorNoiseStrength: 0.5
     - _SnowStrength: 0.678
     - _SnowVariationNoiseSize: 250
     - _SpecularHighlights: 1

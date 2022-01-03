@@ -15,6 +15,7 @@ public class SnowController : MonoBehaviour
   //  public int width = 100;
     [SerializeField] private Terrain terrain;
 
+    [SerializeField] private Button stormButton;
 
     [SerializeField] private Material materials;
 
@@ -39,11 +40,13 @@ public class SnowController : MonoBehaviour
         float emitterValue = slider.value;
         emissionModule.rate = emitterValue; // Need to multiply by 500 to see results on emission of snow 
 
-       
+     
 
         float prevSnowAm = materials.GetFloat("_SnowAmount");
-        materials.SetFloat("_SnowAmount", prevSnowAm + (emitterValue / 999999f)); // Divide with a large number to not increase snow unneccesarilly fast
-        
+        materials.SetFloat("_SnowAmount", prevSnowAm + (emitterValue / 99999f)); // Divide with a large number to not increase snow unneccesarilly fast
+
+
+        stormButton.onClick.AddListener(StormEffect);
 
         //sphere.GetComponent<Renderer>().sharedMaterial.SetFloat("Snow Amount", emitterValue);
 
@@ -69,11 +72,19 @@ public class SnowController : MonoBehaviour
 
     }
 
+    void StormEffect()
+    {
+        var noise = myParticleSystem.noise; 
+        noise.positionAmount = 7f; // Add even more noise to the particle system
+        noise.rotationAmount = 7f;
+        noise.sizeAmount = 7f;
+
+
+    }
+
     IEnumerator changeSnowAmount()
     {
         yield return new WaitForSeconds(3);
-        
-
 
     }
 }

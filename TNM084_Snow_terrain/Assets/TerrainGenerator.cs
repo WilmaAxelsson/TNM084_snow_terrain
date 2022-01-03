@@ -5,10 +5,10 @@ public class TerrainGenerator : MonoBehaviour
 {
 
 
-    public int depth = 7;
+    public int depth = 25;
 
-    public int width = 100;
-    public int height = 100;
+    public int width = 500;
+    public int height = 500;
 
     public float scale = 20f;
 
@@ -34,6 +34,7 @@ public class TerrainGenerator : MonoBehaviour
     TerrainData GenerateTerrain(TerrainData terrainData)
     {
         terrainData.heightmapResolution = width + 1;
+        Debug.Log(terrainData.heightmapResolution);
 
         terrainData.size = new Vector3(width, depth, height); //x, y, z
 

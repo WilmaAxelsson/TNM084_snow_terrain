@@ -5,12 +5,12 @@ public class TerrainGenerator : MonoBehaviour
 {
 
 
-    public int depth = 5;
+    public int depth = 7;
 
-    public int width = 150;
-    public int height = 150;
+    public int width = 100;
+    public int height = 100;
 
-    public float scale = 10f;
+    public float scale = 20f;
 
     public float offsetX = 100f;
     public float offsetY = 100f;

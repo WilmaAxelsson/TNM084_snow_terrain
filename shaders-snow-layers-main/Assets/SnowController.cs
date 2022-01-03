@@ -11,8 +11,8 @@ public class SnowController : MonoBehaviour
 
     // public GameObject sphere;
 
-    public int height = 100;
-    public int width = 100;
+  // public int height = 100;
+  //  public int width = 100;
     [SerializeField] private Terrain terrain;
 
 

@@ -9,10 +9,6 @@ public class SnowController : MonoBehaviour
     ParticleSystem.EmissionModule emissionModule;
     public Slider slider;
 
-    // public GameObject sphere;
-
-  // public int height = 100;
-  //  public int width = 100;
     [SerializeField] private Terrain terrain;
 
     [SerializeField] private Button stormButton;
@@ -28,9 +24,6 @@ public class SnowController : MonoBehaviour
         
         materials.SetFloat("_SnowAmount", 0.0f);
 
-        //
-        //   sphere = GameObject.Find("Sphere"); // Find the Sphere object that generates the snow
-
     }
 
     void Update()
@@ -38,7 +31,7 @@ public class SnowController : MonoBehaviour
         StartCoroutine(changeSnowAmount());
 
         float emitterValue = slider.value;
-        emissionModule.rate = emitterValue; // Need to multiply by 500 to see results on emission of snow 
+        emissionModule.rate = emitterValue;
 
      
 

@@ -2277,7 +2277,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -60.4}
-  m_SizeDelta: {x: 182.4, y: 38}
+  m_SizeDelta: {x: 227.06, y: 51.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &838226687
 MonoBehaviour:
@@ -2562,7 +2562,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -31.17}
-  m_SizeDelta: {x: 182.2, y: 38}
+  m_SizeDelta: {x: 227.06, y: 51.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &954884011
 MonoBehaviour:
@@ -2937,14 +2937,14 @@ RectTransform:
   m_GameObject: {fileID: 1162977983}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -0}
-  m_LocalScale: {x: 1.1, y: 1.4, z: 1}
+  m_LocalScale: {x: 1.4, y: 1.6, z: 1}
   m_Children: []
   m_Father: {fileID: 2006967078}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1.1, y: 14.79}
+  m_AnchoredPosition: {x: -1.1, y: 17.3}
   m_SizeDelta: {x: 173.1, y: 3.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1162977985
@@ -4860,7 +4860,7 @@ ParticleSystem:
   ShapeModule:
     serializedVersion: 6
     enabled: 1
-    type: 5
+    type: 0
     angle: 25
     length: 5
     boxThickness: {x: 0, y: 0, z: 0}
@@ -4943,7 +4943,7 @@ ParticleSystem:
     m_TextureColorAffectsParticles: 1
     m_TextureAlphaAffectsParticles: 1
     m_TextureBilinearFiltering: 0
-    randomDirectionAmount: 1
+    randomDirectionAmount: 0
     sphericalDirectionAmount: 0
     randomPositionAmount: 1
     radius:
@@ -7818,7 +7818,7 @@ ParticleSystem:
     colliderForce: 0
     multiplyColliderForceByParticleSize: 0
     multiplyColliderForceByParticleSpeed: 0
-    multiplyColliderForceByCollisionAngle: 1
+    multiplyColliderForceByCollisionAngle: 0
     m_Planes: []
     m_Dampen:
       serializedVersion: 2
@@ -8946,13 +8946,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1905370151}
-  m_LocalRotation: {x: -0.6532815, y: -0.27059805, z: -0.27059805, w: 0.6532815}
-  m_LocalPosition: {x: 96, y: 101, z: 141}
+  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 150.93, y: 101, z: 244.7}
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: -90, y: -45, z: 0}
+  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!114 &1905370155
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9006,7 +9006,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -2.7}
-  m_SizeDelta: {x: 71.7, y: 20}
+  m_SizeDelta: {x: 90.2, y: 20.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1907048893
 MonoBehaviour:
@@ -9580,7 +9580,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Snow Storm
+  m_text: Enable Snowstorm
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

@@ -2380,7 +2380,7 @@
     "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.GroupData",
     "m_ObjectId": "385a2720488349d790130e657a7d3be8",
-    "m_Title": "Displacement",
+    "m_Title": "Displacement Map",
     "m_Position": {
         "x": -278.0,
         "y": -745.0

@@ -4943,9 +4943,9 @@ ParticleSystem:
     m_TextureColorAffectsParticles: 1
     m_TextureAlphaAffectsParticles: 1
     m_TextureBilinearFiltering: 0
-    randomDirectionAmount: 0
+    randomDirectionAmount: 1
     sphericalDirectionAmount: 0
-    randomPositionAmount: 0
+    randomPositionAmount: 1
     radius:
       value: 1
       mode: 0
@@ -7040,9 +7040,9 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     separateAxes: 0
-    frequency: 0.5
+    frequency: 5
     damping: 1
-    octaves: 1
+    octaves: 3
     octaveMultiplier: 0.5
     octaveScale: 2
     quality: 1
@@ -8966,7 +8966,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   slider: {fileID: 1907048893}
-  terrain: {fileID: 0}
+  terrain: {fileID: 513345834}
   stormButton: {fileID: 954884011}
   materials: {fileID: 2100000, guid: cba7986325ab1c94db7c519a7a6d9fca, type: 2}
 --- !u!1 &1907048891

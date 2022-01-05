@@ -41,36 +41,16 @@ public class SnowController : MonoBehaviour
 
         stormButton.onClick.AddListener(StormEffect);
 
-        //sphere.GetComponent<Renderer>().sharedMaterial.SetFloat("Snow Amount", emitterValue);
-
-        /* if (materials[i].GetFloat("_SnowAmount") >= 0.6f)
-         {
-             int xRes = terrain.terrainData.heightmapWidth;
-
-             int yRes = terrain.terrainData.heightmapHeight;
-
-
-             float[,] heights = terrain.terrainData.GetHeights(width, height, width, height);
-
-
-             heights[10, 10] = 1f;
-             heights[20, 20] = 0.5f;
-
-             terrain.terrainData.SetHeights(width, height, heights);
-
-
-
-         }*/
-
 
     }
 
     void StormEffect()
     {
-        var noise = myParticleSystem.noise; 
-        noise.positionAmount = 7f; // Add even more noise to the particle system
-        noise.rotationAmount = 7f;
-        noise.sizeAmount = 7f;
+        var noise = myParticleSystem.noise;
+        noise.strength = 10f; // Add even more noise to the particle system
+        noise.positionAmount = 3f;
+        noise.rotationAmount = 3f;
+        noise.sizeAmount = 1f;
 
 
     }

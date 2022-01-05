@@ -40,7 +40,6 @@ public class TerrainGenerator : MonoBehaviour
     TerrainData GenerateTerrain(TerrainData terrainData)
     {
         terrainData.heightmapResolution = width + 1;
-        Debug.Log(terrainData.heightmapResolution);
 
         terrainData.size = new Vector3(width, depth, height); //x, y, z
 

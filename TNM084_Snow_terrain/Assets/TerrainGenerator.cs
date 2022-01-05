@@ -25,7 +25,6 @@ public class TerrainGenerator : MonoBehaviour
         Terrain terrain = GetComponent<Terrain>();
         terrain.terrainData = GenerateTerrain(terrain.terrainData);
 
-
         terrainButton.onClick.AddListener(randomOffset); //If "Change terrain" button is clicked, generate a new random terrain using new random offset and scale values
         
     }

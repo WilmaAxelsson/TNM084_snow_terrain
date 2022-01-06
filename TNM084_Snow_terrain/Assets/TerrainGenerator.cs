@@ -66,7 +66,18 @@ public class TerrainGenerator : MonoBehaviour
         float xCoord = (float)x / width * scale + offsetX;
         float yCoord = (float)y / height * scale + offsetY;
 
-        float noise = Mathf.PerlinNoise(xCoord, yCoord);
+        int octaves = 3;
+
+        float amplitude = 0.5f;
+        float frequency = 1f;
+        float noise = 0;
+
+        for (var oc = 0; oc < octaves; oc++)
+        {
+            noise += amplitude * Mathf.PerlinNoise(xCoord * frequency, yCoord * frequency);
+            amplitude *= 0.5f;
+            frequency *= 2f;
+        }
 
         return noise;
     }

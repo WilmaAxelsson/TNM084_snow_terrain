@@ -4192,7 +4192,7 @@ ParticleSystem:
     separateAxes: 0
     frequency: 5
     damping: 1
-    octaves: 3
+    octaves: 1
     octaveMultiplier: 0.5
     octaveScale: 2
     quality: 1
@@ -6097,7 +6097,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1905370151}
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 150.93, y: 101, z: 244.7}
+  m_LocalPosition: {x: 150.93, y: 112.2, z: 244.7}
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}

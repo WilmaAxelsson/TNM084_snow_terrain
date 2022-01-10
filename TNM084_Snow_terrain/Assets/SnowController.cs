@@ -19,23 +19,19 @@ public class SnowController : MonoBehaviour
     {
         myParticleSystem = GetComponent<ParticleSystem>();
         emissionModule = myParticleSystem.emission;
-        slider = GameObject.Find("Slider").GetComponent<Slider>();
-
         
-        materials.SetFloat("_SnowAmount", 0.0f);
+        materials.SetFloat("_SnowAmount", 0.0f); // Set start Snow Amount to value 0
 
     }
 
     void Update()
     {
-        StartCoroutine(changeSnowAmount());
+        StartCoroutine(changeSnowAmount()); // Wait 3 secs. for snow to fall, before adding snow to terrain
 
-        float emitterValue = slider.value;
-        emissionModule.rate = emitterValue;
+        float emitterValue = slider.value; 
+        emissionModule.rate = emitterValue; // Set 'emission' value of particle system to slider
 
-     
-
-        float prevSnowAm = materials.GetFloat("_SnowAmount");
+        float prevSnowAm = materials.GetFloat("_SnowAmount"); // Get previous amount of snow, to be added with new amount of snow
         materials.SetFloat("_SnowAmount", prevSnowAm + (emitterValue / 99999f)); // Divide with a large number to not increase snow unneccesarilly fast
 
 
@@ -44,7 +40,8 @@ public class SnowController : MonoBehaviour
 
     }
 
-    void StormEffect()
+    
+    void StormEffect() // Create snowstorm effect
     {
         var noise = myParticleSystem.noise;
         noise.strength = 10f; // Add even more noise to the particle system
